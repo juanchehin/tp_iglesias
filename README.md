@@ -30,10 +30,10 @@ Utilice el archivo CSV proporcionado para realizar los siguientes pasos:
 
 Pista:
 1) Para calcular la covarianza usando Numpy, cambie la línea:
-coeficientes = np.polyfit(X, y, 1)
-a:
-coeficientes, cov_matrix = np.polyfit(X, y, 1, cov=True)
+coefficients = np.polyfit(X, y, 1)
+to:
+coefficients, cov_matrix = np.polyfit(X, y, 1, cov=True)
 2) Para los valores medio, percentil 75 y mínimo, y suponiendo que ha asignado la variable independiente a X y la variable dependiente a y, utilice los siguientes métodos en cada X, y:
-.significar()
+.mean()
 .min()
-.cuantil(0,75)
+.quantile(0.75)
